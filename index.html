@@ -1,0 +1,109 @@
+<!-- init -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>learn6level2</title>
+    <script src="script.js"></script>
+    <script src="students_script.js"></script>
+</head>
+<body id='bod'>
+
+
+<header>
+    <h1 align="center"> Задание №6 Модуль №2</h1>
+</header>
+
+<div align="center">
+    <p> Прежде чем приступать к решению последующих задач, посмотрите комментарии в файле script.js. </p>
+    <hr>
+    <hr>
+    <h2> ПРИМЕР - Объем "куба" </h2>
+    <p> Чтобы посчитать объем "куба" (на самом деле параллелепипеда) введите длины его сторон и присвойте имя </p>
+    <span><input type="text" id="cubX" placeholder="длина" required> </span>
+    <span><input type="text" id="cubY" placeholder="высота" required> </span>
+    <span><input type="text" id="cubZ" placeholder="ширина" required> </span>
+    <p><input type="text" id="cubName" placeholder="название" required></p>
+
+    <button onclick="addCub()"> добавить куб</button>
+
+    <p>
+        Выберите куб
+        <select id="selectCub" required>
+        </select>
+    </p>
+    <button onclick="cubSize()"> рассчитать объем</button>
+    <p>Результат = <span id="cubResult"></span></p>
+</div>
+
+
+<hr>
+<p align="center"> Решайте задачи, дописав код в файле students_script.js </p>
+<hr>
+<hr>
+<div align="center">
+    <h2> Задание - Работа с массивом </h2>
+    <div id="massOnBoard"> </div>
+
+    <p> Допишите код так, чтобы работали все кнопки</p>
+    <hr>
+    <p>
+        <button onclick="shiftMass()"> shift</button>
+        "вытолкнули" значение <span id="pop_shift_Value"></span>
+        <button onclick="popMass()"> pop</button>
+    </p>
+    <hr>
+    <p>
+        <button onclick="unshiftMass()"> unshift</button>
+        <span><input type="text" id="push_unshift_Value" placeholder="новый элемент массива" required> </span>
+        <button onclick="pushMass()"> push</button>
+    </p>
+    <hr>
+    <p>
+        <button onclick="lengthMass()"> length</button>
+        Длина массива <span id="lengthValue"></span>
+    </p>
+    <hr>
+    <p>
+        <span><input type="text" id="concatValue" placeholder="элементы нового массива" required> </span>
+        <button onclick="concatMass()"> concat</button>
+    </p>
+    <hr>
+    <p>
+        <span><input type="text" id="searchValue" placeholder="значение элемента массива" required> </span>
+        <button onclick="searchMass()"> получить индекс по значению</button>
+    <p> индекс искомого элемента <span id="resIndex"></span></p>
+    </p>
+</div>
+<hr>
+<hr>
+
+
+<div align="center">
+    <h2> Задание - Пользователи </h2>
+    <p> По аналогии с примером и предыдущим заданием, создайте функцию коснтруктор и реализуйте прочие функции, чтобы
+        работали все кнопки. Дополнительно придумайте действие и реализуйте функцию, которая сработает при нажатии на
+        последнюю кнопу</p>
+    <span><input type="text" id="names" placeholder="Имя"> </span>
+    <span><input type="text" id="secName" placeholder="Отчество"> </span>
+    <span><input type="text" id="lastName" placeholder="Фамилия"> </span>
+    <p><input type="text" id="login" placeholder="логин" required></p>
+    <p><input type="text" id="age" placeholder="возраст" required></p>
+    <p><input type="text" id="userHeight" placeholder="рост" required></p>
+    <div id="massOfUser">
+    </div>
+    <button onclick="addUser()"> добавить пользователя</button>
+    <button onclick="midleHeight()"> средний рост</button>
+    <button onclick="midleAge()"> средний возраст</button>
+    <button onclick="countUsers()"> колличество пользователей</button>
+    <p>
+        Выберите пользователя
+        <select id="selectUser" required>
+        </select>
+    </p>
+    <button onclick="myFunc()"> придумайте действие</button>
+    <p>Результат = <span id="userResult"></span></p>
+</div>
+</body>
+</html>

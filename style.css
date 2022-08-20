@@ -1,0 +1,40 @@
+/* init */
+#bod {
+    background: #212121;
+    color: azure;
+    font-family: "Bookman Old Style";
+}
+input {
+    background: #313131;
+    color: azure;
+    border-color: #11999e;
+    text-align: center;
+}
+button {
+    background: #313131;
+    color: gold;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color:#11999e;
+}
+select {
+    border-color: #11999e;
+    background: #212121;
+    color: gold;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+    border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+    border: 1px solid grey;
+}
+select:invalid:required {
+    border-color: darksalmon;
+}
+input:invalid:required {
+    border-color: darksalmon;
+}
